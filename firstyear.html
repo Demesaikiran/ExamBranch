@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>IstYear</title>
+
+    <script language="javascript" type="text/javascript" src="firstyear.js">
+</script>
 </head>
 <body>
     <section class="text-gray-600 body-font">
@@ -73,24 +76,49 @@
     <section class="text-gray-400 bg-white-900 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-black">Hey You reached Ist Year Page</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">To know your results and attendance enter your Name and Hallticket number and click GO</p>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-black">Hey You reached I Year Page</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">To know your results and attendance enter your Hallticket number and click GO</p>
           </div>
           <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end sm:space-x-4 sm:space-y-0 space-y-4">
             <div class="relative sm:mb-0 flex-grow w-full">
-              <label for="full-name" class="leading-7 text-sm text-black-400" style="color:black;">Full Name</label>
-              <input type="text" id="full-name" name="full-name" class="w-full bg-white-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:ring-2 focus:ring-red-900 focus:bg-transparent text-base outline-none text-black-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </div>
-            <div class="relative sm:mb-0 flex-grow w-full">
-              <label for="Hallticket" class="leading-7 text-sm text-gray-400" style="color: black;">HallTicket</label>
-              <input type="text" id="Hallticket" name="HallTicket" class="w-full bg-white-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:ring-2 focus:ring-red-900 focus:bg-transparent text-base outline-none text-black-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </div>
-            <button class="text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">GO</button>
+              <form name="Form1" id="Form1" method="post">
+                <label for="Hallticket" class="leading-7 text-sm text-gray-400" style="color: black;">HallTicket</label>
+              <input type="text" id="Hallticket" name="HallTicket" class="w-full bg-white-800 bg-opacity-20 rounded border border-gray-800 focus:border-red-100 focus:ring-2 focus:ring-red-900 focus:bg-transparent text-base outline-none text-black-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </form>
+            
+              <label for="branch" class="leading-7 text-sm text-gray-400" style="color: black;">Branch:</label>
+              
+              <select id="Branch" name="branch">
+                <option value="select">Select</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="CEE">CEE</option>
+                <option value="MSNT">MSNT</option>
+              </select>
+              <br>
+              <label for="Year-Sem" class="leading-7 text-sm text-gray-400" style="color: black;">Year-Sem:</label>
+              
+              <select id="Year-Sem" name="Year-Sem">
+                <option value="select">Select</option>
+                <option value="1-1">1-1</option>
+                <option value="1-2">1-2</option>
+                <option value="2-1">2-1</option>
+                <option value="2-2">2-2</option>
+                <option value="3-1">3-1</option>
+                <option value="3-2">3-2</option>
+                <option value="4-1">4-1</option>
+                <option value="4-2">4-2</option>
+              </select>
+              
+              <br>
+          </div>
+            <button onclick="emtpyValidate1()" class="text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg" >GO</button>
           </div>
         </div>
       </section>
       <hr>
 
+ 
 
     
 </body>
